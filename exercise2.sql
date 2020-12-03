@@ -5,7 +5,7 @@ SELECT items.name AS "Nama Items",
        COUNT(*)*items.price AS "Total Pemasukan"
 FROM sales_records
 JOIN items
-ON sales_records.item_id=items.id
+ON sales_records.item_id = items.id
 GROUP BY items.price, items.name
 ORDER BY COUNT(*)*items.price DESC
-LIMIT 5 ;
+LIMIT 5;
